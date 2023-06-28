@@ -1,0 +1,295 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+html {
+  font-size:62.5%;
+}
+
+body {
+  font-size:1.6em;
+  font-family:Roboto, Source Sans Pro, Arial;
+  display:flex;
+  flex-direction:column;
+  color:#fff;
+}
+
+
+:root {
+  --darkcolor: #1F2937;
+  --bluecolor: #3882F6;
+  --graycolor:gray;
+  --lightgray: #E5E7EB;
+  --blackcolor: #000;
+  --quotecolor: #1f2937;
+}
+
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  background-color:orange;
+  min-height:10rem;
+}
+
+
+/* nav-starts-here */
+
+nav {
+  min-height:5rem;
+  background:var(--darkcolor);
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  padding:1%;
+}
+
+.logo {
+  color:#fff;
+  font-size:3rem;
+  font-weight:900;
+}
+
+ul {
+  list-style-type:none;
+  display: flex;
+
+}
+
+li a {
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:1.6rem 1.8rem;
+}
+
+ 
+
+
+/* nav-ends-here */
+
+.hero {
+  width:100%;
+  min-height:40rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: var(--darkcolor);
+}
+
+.hero-div {
+  display:flex;
+  flex-basis:60%;
+  height:20rem;
+  justify-content:space-between;
+}
+
+.herodiv {
+  display:flex;
+  justify-content:center;
+  flex-basis:48%;
+  align-items:center;
+}
+
+.herodiv:nth-child(1) {
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+}
+
+.herodiv:nth-child(1) h1 {
+  width:30rem;
+  font-size:4rem;
+  font-weight:900;
+  margin-bottom:0.5rem;
+}
+
+.herodiv:nth-child(1) p {
+  font-size:1.7rem;
+  margin-bottom:0.5rem;
+  
+}
+
+.herodiv:nth-child(1) button {
+  padding:0.4rem 3rem;
+  font-size:1.7rem;
+  font-weight:900;
+  color:#fff;
+  background:var(--bluecolor);
+  border:none;
+  border-radius:0.7rem;
+}
+
+.herodiv:nth-child(2){
+  background:var(--graycolor)
+ }
+
+
+
+ /* hero-ends-here */
+
+.boxcontent {
+  min-height:35rem;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+  padding-bottom:4rem;
+  background: #fff;
+}
+
+.boxcontent-text {
+  height:5rem;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items:flex-end;
+  color: var(--blackcolor);
+  font-size:2.5rem;
+  font-weight:900;
+  margin-bottom:2.5rem;
+}
+
+.boxcontainer {
+  display:flex;
+  justify-content:space-between;
+  width:50%;
+  min-height:25rem;
+}
+
+.box {
+  display:flex;
+  flex-direction:column;
+  flex-basis:20%;
+  border-radius:1rem;
+  color:var(--blackcolor);
+   
+}
+
+.box div:nth-child(1) {
+  width:100%;
+  min-height:50%;
+  border:0.5rem solid var(--bluecolor);
+  margin-bottom:0.8rem;
+  border-radius:1rem;
+}
+
+.box div:nth-child(2)  {
+  text-align:center;
+}
+
+
+/* boxcontent-ends-here */
+
+.quotesection {
+  width:100%;
+  min-height:40rem;
+  background-color: var(--lightgray);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.quotesection  div {
+  flex-basis:55%;
+  display:flex;
+  flex-direction:column;
+  background:var(--lightgray);
+  align-items: end;
+}
+
+.quotesection div p:nth-child(1) {
+  color:var(--quotecolor );
+  font-size:3rem;
+}
+
+.quotesection div p:nth-child(2) {
+  font-size:2rem;
+  display:flex;
+  justify-self: end;
+  align-items:flex-end;
+  color: var(--blackcolor);
+  font-weight:900;
+  padding-right:7rem;
+}
+
+
+/* quotesection-ends-here */
+
+.signupsection {
+  width:1005;
+  min-height:30rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+}
+
+.signupsection-div1 {
+  flex-basis:70%;
+  height:15rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--bluecolor);
+  border-radius:1.2rem;
+}
+
+.signupsection-div2 {
+  flex-basis:80%;
+  display:flex;
+  justify-content:space-between;
+}
+
+.signupsection-div2 div:nth-child(1){
+  display:flex;
+  flex-direction:column;
+}
+
+.signupsection-div2 div:nth-child(2) {  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.signupsection-div2 div p:nth-child(1){
+  font-size:2.2rem;
+  font-weight:900;
+
+}
+
+.signupsection-div2 div p:nth-child(2) {  
+ font-size:1.8rem;
+}
+
+
+.signupsection-div2 div button {
+  padding:0.4rem 3rem;
+  font-size:1.7rem;
+  font-weight:900;
+  color:#fff;
+  background:transparent;
+  border:0.2rem solid #fff;
+  border-radius:0.7rem;
+}
+
+/* sign-up-section-ends-here */
+
+
+.footer {
+  min-height:10rem;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--darkcolor)
+
+  
+
+}
+/* footer-ends-here */
+
