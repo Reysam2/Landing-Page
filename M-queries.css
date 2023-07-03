@@ -267,6 +267,16 @@
     list-style-type:none;
   }
 
+  .nav-2 .links-2 .active-2 {
+    color:var(--bluecolor);
+   
+  }
+
+  .nav-2 .links-2 li a:hover {
+    color:var(--bluecolor);
+    transition:all 0.3s linear
+  }
+
   .nav-2 .links-2 li a {
     display:block;
     padding:0.2rem 1.8rem;
@@ -274,6 +284,7 @@
     text-decoration:none;
     font-weight:600;
     color:#fff;
+    transition:all 0.125s linear
   }
 
   
@@ -509,7 +520,7 @@
     justify-content:center;
     align-items:center;
     background:var(--darkcolor);
-  
+    font-size:2rem;
     
   
   }
