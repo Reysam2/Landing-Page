@@ -1,26 +1,42 @@
-/* /////////////////min-width:600px-section-starts-here///////// /////////*/
+/* /////////////////max-width:690px-section-starts-here///////// /////////*/
 
-@media screen and (max-width:600px) {
-  .signupsection-div2 {
-    width:80%;
-    min-height:25rem;
-    display:grid;
-    justify-items:center;
-    align-items:center;
-    grid-template-columns:1fr!important;
-    grid-template-rows:1fr 4rem;
+@media screen and (max-width:690px) {
+
+  .signupsection-div2 div p:nth-child(1) {
+    margin:3rem 0 0.3rem 
+  } 
+
+  .signupsection-div2 div p:nth-child(2) {
+   
+  margin-top:-0.01rem
    
   }
+
+
+  .signupsection-div2 div:nth-child(2) button {
+    padding:0.2rem 1.8rem;
+    font-size:2.2rem;
+    border-radius:1rem;
+    background:var(--bluecolor);
+    border:0.3rem solid #fff;
+    color:#fff;
+    font-weight:700;
+    overflow: hidden;
+    z-index: 2;
+    position:relative;
+    transition:0.5s;
+    margin  : 1rem 0 2.5rem!important;
+  }
+
 }
 
-
- /*//////////////// min-width:600px-section-ends-here////////////////// */
+/*/////////min-width:690px-section-ends-here///////////////*/
  
 
+ 
+ 
 
-
-
-/* ///////////////////min-width768px-section-starts-here/// //////////////////// */
+/* /////// min-width768px-section-starts-here/////////// */
 
 @media screen and (min-width:768px) {
 
@@ -109,6 +125,75 @@
   
   /* boxcontent-ends-here */
   
+
+
+  .signupsection {
+    width:100%;
+    min-height:35rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+  
+  }
+  
+  .signupsection-div1 {
+    flex-basis:70%;
+    min-height:20rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--bluecolor);
+    border-radius:1.2rem;
+  }
+
+  .signupsection-div2{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+    align-items:center;
+    min-height:15rem;
+    width:70%;
+  
+    
+  }
+  
+  .signupsection-div2 div {
+    
+
+    display:grid;
+    align-items:center;
+    justify-items:center;
+
+  }
+
+
+  .signupsection-div2 div:nth-child(1)  {
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    margin :1rem 0 0.1rem!important;
+  }
+  
+  
+  .signupsection-div2 div p:nth-child(1){
+    font-size:3rem;
+    font-weight:900;
+    margin-top:1rem;
+  }
+  
+  .signupsection-div2 div p:nth-child(2) {
+    font-size: 2.5rem ;
+    color:#fff;;
+    text-align:center;
+    width:100%;
+    margin:0.rem 0 0.7rem;
+    line-height:3.3rem
+  }
+  
+
 }
 
 /* ///////////////////min-width768px-section-ends-here/// //////////////////// */
@@ -348,33 +433,73 @@
   /* quotesection-ends-here */
   
     .signupsection {
-    width:1005;
-    min-height:30rem;
+    width:100%;
+    min-height:35rem;
     display:flex;
     justify-content:center;
     align-items:center;
     background:#fff;
+  
   }
   
   .signupsection-div1 {
     flex-basis:70%;
-    min-height:15rem;
+    min-height:20rem;
     display:flex;
     justify-content:center;
     align-items:center;
     background:var(--bluecolor);
     border-radius:1.2rem;
   }
+
+  .signupsection-div2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr;
+    align-items:center;
+    min-height:15rem;
+    width:70%;
+ 
+    
+  }
+  
+  .signupsection-div2 div {
+    min-height:10rem;
+ 
+    display:grid;
+    align-items:center;
+    justify-items:center;
+
+  }
+
+
+  .signupsection-div2 div:nth-child(1)  {
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    margin:4rem 0
+  }
   
   
   .signupsection-div2 div p:nth-child(1){
     font-size:3rem;
     font-weight:900;
-  
+    margin-top:1rem;
   }
   
+  .signupsection-div2 div p:nth-child(2) {
+    font-size: 2.3rem;
+    color:#fff;;
+    text-align:center;
+    width:100%;
+    margin-top:1rem;
+    line-height:3.3rem;
+    margin-bottom:1.5rem;
+  }
   
- 
+
   /* sign-up-section-ends-here */
   
   .footer {
@@ -383,15 +508,12 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    background:var(--darkcolor)
+    background:var(--darkcolor);
   
     
   
   }
   /* footer-ends-here */
-  
-  
-     
   
 }
 

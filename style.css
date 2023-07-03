@@ -325,7 +325,7 @@ img {
 
 
  .signupsection {
-  min-height:40rem;
+  min-height:40rem!important;
   background:#fff;
   width:100%;
   display:grid;
@@ -350,21 +350,67 @@ img {
   display:grid;
   justify-items:center;
   align-items:center;
-  grid-template-columns:1fr 1fr ;
+  grid-template-columns:1fr  ;
   grid-template-rows:1fr 4rem;
  
 }
 
-.signupsection-div2 div:nth-child(1) {
+
+.signupsection {
+  width:100%;
+  min-height:35rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+
+}
+
+.signupsection-div1 {
+  flex-basis:70%;
+  min-height:20rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--bluecolor);
+  border-radius:1.2rem;
+}
+
+.signupsection-div2{
   display:grid;
   grid-template-columns:1fr;
-  grid-template-rows:4rem 1fr;
-  row-gap:2rem;
-  justify-items: center;
+  grid-template-rows:1fr;
+  align-items:center;
+  min-height:15rem;
+  width:70%;
+
   
 }
 
-.signupsection-div2 div p:nth-child(1) {
+.signupsection-div2 div {
+  
+
+  display:grid;
+  align-items:center;
+  justify-items:center;
+
+}
+
+
+.signupsection-div2 div:nth-child(1)  {
+  grid-template-columns:1fr;
+  grid-template-rows:1fr;
+  display:grid;
+  align-items:center;
+  justify-items:center;
+
+}
+
+
+.signupsection-div2 div p:nth-child(1){
+  font-size:3rem;
+  font-weight:900;
+  margin-top:2rem;
   font-size: 2.5rem;
   font-weight:600;
   color:#fff;;
@@ -372,14 +418,20 @@ img {
   text-align:center;
   
 }
+ 
 
 .signupsection-div2 div p:nth-child(2) {
   font-size: 2.2rem;
   color:#fff;;
   text-align:center;
   width:100%;
-  margin :2rem
-}
+   font-size: 1,8rem;
+  color:#fff;;
+  text-align:center;
+  width:100%;
+  margin-top:0.3rem!important
+ 
+} 
 
 .signupsection-div2 div:nth-child(2) button {
   padding:0.2rem 1.8rem;
@@ -392,7 +444,8 @@ img {
   overflow: hidden;
   z-index: 2;
   position:relative;
-  transition:0.5s
+  transition:0.5s;
+  margin  : 0.8rem 0 2rem!important;
 }
 
 .signupsection-div2 div:nth-child(2) button:hover {
